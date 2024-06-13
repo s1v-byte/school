@@ -527,7 +527,7 @@ function askNextFollowUpQuestion() {
             event.preventDefault(); // Prevent the default action if user cancels
         } else {
             // Use an absolute path for redirection
-            const targetPath = "/SEI%20Schools/SignIn/index.html";
+            const targetPath = "/school/SignIn/index.html";
             console.log("Redirecting to: " + targetPath);
             window.location.href = targetPath; // Corrected absolute path
         }

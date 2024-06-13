@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="logo" href="/Pictures/SEI_Logo.png"> <!-- Ensure correct path -->
+    <link rel="icon" type="logo" href="../Pictures/SEI_Logo.png"> <!-- Ensure correct path -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samantabhadra Educational Institute</title>
@@ -36,63 +36,64 @@
             <div id="Sign-In-Box">
                 <h1><font color="FFFFFF">Create An Account</font></h1> 
             </div>
-            <form action="connect.php" method="post">
+            <form action="register.php" method="post">
                 <div class="input-wrapper">
                     <label for="fName">First Name:</label>
-                    <input type="text" id="fName" class="input-box" placeholder="First Name" name="firstname">
+                    <input type="text" id="fName" class="input-box" placeholder="First Name" name="firstname" required>
                 </div>
                 <div class="input-wrapper">
                     <label for="lName">Last Name:</label>
-                    <input type="text" id="lName" class="input-box" placeholder="Last Name" name="lastname">
+                    <input type="text" id="lName" class="input-box" placeholder="Last Name" name="lastname" required>
                 </div>
                 <div class="input-wrapper">
                     <label for="eMail">Email:</label>
-                    <input type="email" id="eMail" class="input-box" placeholder="Email" name="email">
+                    <input type="email" id="eMail" class="input-box" placeholder="Email" name="email" required>
                 </div>
                 <div class="input-wrapper">
                     <label for="userRole">I am a:</label>
-                    <select id="userRole" class="input-box" onchange="toggleStudentIdInput()" name="role">
+                    <select id="userRole" class="input-box" onchange="toggleStudentIdInput()" name="role" required>
                         <option value="student" selected>Student</option>
                         <option value="teacher">Teacher</option>
                         <option value="admin">School Administrator</option>
                     </select>
                 </div>
                 
-                <div class="input-wrapper" id="studentIdInput"> <!-- Hide initially -->
+                <div class="input-wrapper" id="studentIdInput">
                     <label for="studentId">Student ID:</label>
-                    <input type="text" id="studentId" class="input-box" placeholder="Student ID" name="studentid">
+                    <input type="text" id="studentId" class="input-box" placeholder="Student ID" name="studentid" required>
                 </div>
                 
-                <div class="input-wrapper" id="gradeLevelInput"> <!-- Hide initially -->
+                <div class="input-wrapper" id="gradeLevelInput">
                     <label for="gradeLevel">Grade Level:</label>
-                    <input type="text" id="gradeLevel" class="input-box" placeholder="Grade Level" name="gradelevel">
+                    <input type="text" id="gradeLevel" class="input-box" placeholder="Grade Level" name="gradelevel" required>
                 </div>
                 
-                <div class="input-wrapper" id="gradeSectionInput"> <!-- Hide initially -->
+                <div class="input-wrapper" id="gradeSectionInput">
                     <label for="gradeSection">Grade Section:</label>
-                    <input type="text" id="gradeSection" class="input-box" placeholder="Grade Section" name="gradesection">
+                    <input type="text" id="gradeSection" class="input-box" placeholder="Grade Section" name="gradesection" required>
                 </div>
-
-                <div class="input-wrapper" id="teacherIdInput" style="display: none;"> <!-- Hide initially -->
+                
+                <div class="input-wrapper" id="teacherIdInput" style="display: none;">
                     <label for="teacherId">Employee ID:</label>
                     <input type="text" id="teacherId" class="input-box" placeholder="Employee ID" name="employeeid">
                 </div>
-
+            
                 <div class="password-input-wrapper">
                     <label for="passwordInput">Password:</label>
-                    <input type="password" id="passwordInput" class="input-box" placeholder="Password" name="password">
+                    <input type="password" id="passwordInput" class="input-box" placeholder="Password" name="password" required>
                     <button type="button" id="showPasswordBtn" class="show-password-btn">show</button>
                 </div>
                 
                 <div class="password-input-wrapper">
                     <label for="confirmPasswordInput">Confirm Password:</label>
-                    <input type="password" id="confirmPasswordInput" class="input-box" placeholder="Confirm Password" name="confirmpassword">
+                    <input type="password" id="confirmPasswordInput" class="input-box" placeholder="Confirm Password" name="confirmpassword" required>
                     <button type="button" id="showConfirmPasswordBtn" class="show-password-btn">show</button>
                 </div>
                 
                 <button type="submit" class="sign-btn">Sign Up</button>
                 <p><a href="index.html"><b>Go back to Sign In</b></a></p> 
             </form>
+            
         </div>
     </div>
     <script src="SignIn.js"></script> 
