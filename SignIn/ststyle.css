@@ -1,0 +1,386 @@
+/* General styles */
+.logo {
+  width: 150px;
+  float: left;
+}
+.logo2 {
+  position: absolute;
+  width: 600px;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+body {
+  background-color: #f2f2f2; /* Add background color to the entire website */
+}
+
+.time {
+  margin-bottom: -135px;
+}
+
+#rectangle {
+  width: auto;
+  height: 25px;
+  background: #ffa500;
+  margin-top: -40px;
+  box-shadow: 0px 3px 3px;
+}
+
+#rectangle2 {
+  width: auto;
+  height: 25px;
+  background: #0000ff;
+  margin-top: -40px;
+  box-shadow: 0px 3px 3px;
+}
+
+.Schedule {
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: #C78402;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.tabContainer {
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+}
+
+.tabContainer .buttonContainer {
+  width: auto;
+  height: auto;
+  text-align: left;
+  white-space: nowrap;
+  float: center;
+  margin-top: 90px;
+}
+
+.tabContainer .buttonContainer button {
+  display: inline-block; /* Display buttons inline */
+  margin: 0 5px; /* Add spacing between buttons */
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.tabContainer .buttonContainer button:hover {
+  background-color: #b97c09;
+}
+
+.tabContainer .tabPanel {
+  height: 85%;
+  color: grey;
+  text-align: center;
+  padding-top: 50px;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  display: none;
+}
+
+.studinfo {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: #0000FF;
+  margin-top: -20px;
+  margin-right: -30px;
+}
+
+.studentInfo {
+  text-align: left;
+  color: #000000;
+  font-size: 25px;
+  margin-left: -155px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+  padding: 45px;
+  display: flex;
+  column-gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: black;
+}
+
+.changePass {
+  width: 600px;
+  height: 200px;
+  background: #d4dce4;
+  padding: 20px;
+  margin: 0 auto; /* Center horizontally */
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.changePassContainer {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Adjust height to cover the full viewport height */
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between; /* Space between label and input */
+  align-items: center; /* Center vertically */
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.inputContainer label {
+  width: 40%; /* Adjust label width */
+  text-align: left; /* Align label text to the left */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputContainer input[type="password"], .inputContainer input[type="text"] {
+  width: 50%; /* Adjust input width */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+
+.changePass input[type="submit"] {
+  margin-top: 20px;
+  width: 30%; /* Occupy full width */
+  padding: 10px; /* Add padding */
+  background-color: #9CB3C9; /* Green background color */
+  color: black; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 20px; /* Add border radius */
+  cursor: pointer; /* Add cursor pointer */
+  transition: background-color 0.3s; /* Add transition effect */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.changePass input[type="submit"]:hover {
+  background-color: #b97c09; /* Darken background color on hover */
+}
+
+.inputContainer button {
+  width: 60px; /* Set button width */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.inputContainer button:hover {
+  background-color: #b97c09; /* Add hover effect for input container buttons */
+}
+.feedback {
+  margin-top: 50px;
+  text-align: center;
+}
+.feedback h3 {
+  color:#0000FF;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+.feedback p {
+  color:#b97c09;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 23px;
+}
+.feedback textarea {
+  width: 50%; /* Adjust textarea width */
+  height: 300px;
+  margin: 10px auto; /* Center textarea */
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.feedback input[type="submit"] {
+  margin-top: 5px;
+  width: 10%; /* Occupy full width */
+  padding: 10px; /* Add padding */
+  background-color: #9CB3C9; /* Green background color */
+  color: black; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 20px; /* Add border radius */
+  cursor: pointer; /* Add cursor pointer */
+  transition: background-color 0.3s; /* Add transition effect */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.feedback input[type="submit"]:hover {
+  background-color: #b97c09;
+}
+
+/* Chatbot styles */
+
+.chatbot-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #0000FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.chatbot-toggle-button:hover {
+  background-color: #b97c09; /* Add hover effect for chatbot toggle button */
+}
+
+.chatbot-container {
+  width: 400px;
+  height: 600px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  display: none; /* Initially hidden */
+}
+
+.chatbot-header {
+  background-color: #0000FF;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  
+}
+
+.chatbot-minimize-button, .chatbot-reset-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 50px; /* Increase font size for the minimize button */
+  cursor: pointer;
+  width: 60px; /* Set the width for the minimize button */
+  height: 60px; /* Set the height for the minimize button */
+   /* Add margin between the buttons */
+  margin-top: 0px;
+}
+
+.chatbot-reset-button{
+  font-size: 20px;
+  margin-right: 280px;
+  margin-bottom: 0px;
+}
+
+.chatbot-minimize-button:hover, .chatbot-reset-button:hover {
+  background-color: #b97c09; /* Add hover effect for chatbot minimize and reset buttons */
+}
+
+.chatbot-messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbot-message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  position: relative;
+}
+
+.chatbot-message.bot {
+  background-color: #cad8df;
+  align-self: flex-start;
+  color: #000;
+}
+
+.chatbot-message.user {
+  background-color: #0808eb;
+  align-self: flex-end;
+  color: white;
+}
+
+.chatbot-option {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f1a71c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.chatbot-option:hover {
+  background-color: #b97c09; /* Add hover effect for chatbot options */
+}
+
+.chatbot-input {
+  display: flex;
+  padding: 10px;
+}
+
+.chatbot-input-field {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-height: 30px; /* Increase the minimum height */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.chatbot-send-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #0000FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chatbot-send-button:hover {
+  background-color: #b97c09; /* Add hover effect for chatbot send button */
+}
+
+.chatbot-timestamp {
+  font-size: 0.8em;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.chatbot-buttons {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+}
+.chat-label {
+  position: fixed;
+  bottom: 30px;
+  right: 110px;
+  color: rgb(0, 0, 0);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  cursor: pointer;
+}

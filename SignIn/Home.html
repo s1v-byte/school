@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="logo" href="\Pictures\SEI_Logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantabhadra Educational Institute</title>
+    <link rel="stylesheet" href="ststyle.css">
+    <link rel="stylesheet" href="stindex.js">
+
+    <!-- Google Fonts Link For Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <img class="logo" src="..\Pictures\SEI_Logo.png" alt="SEI Logo">
+
+    <h2 style="text-align: left;"><br><font color="0000FF">SAMANTABHADRA EDUCATIONAL INSTITUTE<br>
+        <font color="696969">CEBU CITY <br>
+        <font color="0000FF">STUDENT PORTAL</font></h2>
+        
+    <div class="time">
+        <h2 style="text-align: right">
+            <font color="0000FF">Today is <span id="date"></span></font></h2>
+        <script> 
+            var dt = new Date();
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var formattedDate = dt.toLocaleDateString(undefined, options);
+            document.getElementById('date').innerHTML = formattedDate;
+        </script> 
+    </div>
+
+    <div class="tabContainer">
+        <div class="buttonContainer">
+            <!-- Existing buttons -->
+            <button onclick="showPanel(0, '#9CB3C9')">HOME</button>
+            <button onclick="showPanel(1, '#9CB3C9')">ENROLLMENT</button>
+            <button onclick="showPanel(2, '#9CB3C9')">CHANGE PASSWORD</button>
+            <!-- Add feedback button -->
+            <button onclick="showPanel(3, '#9CB3C9')">FEEDBACK</button>
+            <button id="logoutButton">LOG OUT</button>
+        </div>
+        <div class="tabPanel">
+            <div id="rectangle"></div> <!--Student Info Tab-->
+            <div class="container">
+                <div class="studinfo">
+                    <b>Student Information</b>
+                </div>
+                <div class="studentInfo">
+                    <p>Student ID: 20201234</p>
+                    <p>Student Name:</p>
+                    <p>Section:</p>
+                    <p>Year Level:</p>
+                    <p>Personal Email:</p>
+                </div>
+            </div>
+            <div id="rectangle2"></div>
+            <div class="Schedule">
+                <b>Class Schedule</b>
+            </div>
+        </div>
+        <div class="tabPanel">
+            <div id="rectangle"></div> <!--Enrollment tab-->
+            Enrollment
+        </div>
+        <div class="tabPanel"> <!--Change pass tab-->
+            <div id="rectangle"></div>
+            <div class="changePass">
+                <form>
+                    <div class="inputContainer">
+                        <label for="currentPassword">Current Password:</label>
+                        <input type="password" id="currentPassword" name="currentPassword">
+                        <button type="button" id="toggleCurrentPassword">Show</button>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="newPassword">New Password:</label>
+                        <input type="password" id="newPassword" name="newPassword">
+                        <button type="button" id="toggleNewPassword">Show</button>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="confirmPassword">Confirm New Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword">
+                        <button type="button" id="toggleConfirmPassword">Show</button>
+                    </div>
+                    <input type="submit" value="Submit"><a href></a>
+                </form>
+            </div>
+        </div>
+        <div class="tabPanel">
+            <div id="rectangle"></div>
+            <div class="feedback">
+                <h3>YOUR FEEDBACK MATTERS!</h3>
+                <p>We value your input and would love to hear your thoughts and suggestions on <br>how we can improve our services. Please share your feedback below:</p>
+                <textarea id="feedbackText" rows="4" cols="50" placeholder="Type your feedback here..."></textarea>
+                <br>
+                <input type="submit" value="Submit" onclick="submitFeedback()">
+            </div>
+        </div>
+        
+    </div>
+    <div class="chat-label">Want to chat?</div>
+
+        <!--CHATBOT BELOW-->
+        <button class="chatbot-toggle-button" onclick="toggleChatbot()"><b>Chat</b></button>
+        <div class="chatbot-container">
+          <div class="chatbot-header">
+            <h2>Chatbot</h2>
+            <div class="chatbot-buttons">
+              <button class="chatbot-reset-button" onclick="resetChatbot()"><i class="fas fa-redo"></i></button>
+              <button class="chatbot-minimize-button" onclick="toggleChatbot()">-</button>
+            </div>
+          </div>
+          
+          <div class="chatbot-messages">
+            <!-- Chatbot messages will be displayed here -->
+          </div>
+          <div class="chatbot-input">
+            <input type="text" class="chatbot-input-field" placeholder="Type your message..." />
+            <button type="submit" class="chatbot-send-button"><i class="fas fa-arrow-right"></i></button>
+          </div>
+          
+        </div>        
+    </div>
+    <script src="stindex.js" defer></script>
+    <img class="logo2" src="\Pictures\SEI_Logo50.png" alt="SEI Logo">
+</body>
+</html>

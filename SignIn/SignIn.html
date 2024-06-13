@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="logo" href="/Pictures/SEI_Logo.png"> <!-- Ensure correct path -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantabhadra Educational Institute</title>
+    <link rel="stylesheet" href="SignIn.css">
+</head>
+<body>
+    <img class="logo" src="../Pictures/SEI_Logo.png" alt=""> <!-- Ensure correct path -->
+    
+    <h2 style="text-align: left;"><br><font color="0000FF">SAMANTABHADRA EDUCATIONAL INSTITUTE<br>
+        <font color="696969">CEBU CITY <br>
+        <font color="0000FF">Create An Account</font></h2>
+    <h2 style="text-align: right"><font color="0000FF">Today is <span id="date"></span></font></h2>
+    <script> 
+        var dt = new Date();
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var formattedDate = dt.toLocaleDateString(undefined, options);
+        document.getElementById('date').innerHTML = formattedDate;
+    </script>    
+    <div id="rectangle"></div>
+    <p style="font-size: 25px;"><font color="0000FF">You have reached the Official Website of 
+        the <b>Samantabhadra Educational Institute</b>, Cebu City.</font></p>
+    <div class="container">
+        <div class="div1">
+            <!-- You can add content here if needed -->
+        </div>
+        <div class="div2">
+            <!-- You can add content here if needed -->
+        </div>
+        
+        <div class="sign-in">
+            <div id="Sign-In-Box">
+                <h1><font color="FFFFFF">Create An Account</font></h1> 
+            </div>
+            <form action="connect.php" method="post">
+                <div class="input-wrapper">
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName" class="input-box" placeholder="First Name" name="firstname">
+                </div>
+                <div class="input-wrapper">
+                    <label for="lName">Last Name:</label>
+                    <input type="text" id="lName" class="input-box" placeholder="Last Name" name="lastname">
+                </div>
+                <div class="input-wrapper">
+                    <label for="eMail">Email:</label>
+                    <input type="email" id="eMail" class="input-box" placeholder="Email" name="email">
+                </div>
+                <div class="input-wrapper">
+                    <label for="userRole">I am a:</label>
+                    <select id="userRole" class="input-box" onchange="toggleStudentIdInput()" name="role">
+                        <option value="student" selected>Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="admin">School Administrator</option>
+                    </select>
+                </div>
+                
+                <div class="input-wrapper" id="studentIdInput"> <!-- Hide initially -->
+                    <label for="studentId">Student ID:</label>
+                    <input type="text" id="studentId" class="input-box" placeholder="Student ID" name="studentid">
+                </div>
+                
+                <div class="input-wrapper" id="gradeLevelInput"> <!-- Hide initially -->
+                    <label for="gradeLevel">Grade Level:</label>
+                    <input type="text" id="gradeLevel" class="input-box" placeholder="Grade Level" name="gradelevel">
+                </div>
+                
+                <div class="input-wrapper" id="gradeSectionInput"> <!-- Hide initially -->
+                    <label for="gradeSection">Grade Section:</label>
+                    <input type="text" id="gradeSection" class="input-box" placeholder="Grade Section" name="gradesection">
+                </div>
+
+                <div class="input-wrapper" id="teacherIdInput" style="display: none;"> <!-- Hide initially -->
+                    <label for="teacherId">Employee ID:</label>
+                    <input type="text" id="teacherId" class="input-box" placeholder="Employee ID" name="employeeid">
+                </div>
+
+                <div class="password-input-wrapper">
+                    <label for="passwordInput">Password:</label>
+                    <input type="password" id="passwordInput" class="input-box" placeholder="Password" name="password">
+                    <button type="button" id="showPasswordBtn" class="show-password-btn">show</button>
+                </div>
+                
+                <div class="password-input-wrapper">
+                    <label for="confirmPasswordInput">Confirm Password:</label>
+                    <input type="password" id="confirmPasswordInput" class="input-box" placeholder="Confirm Password" name="confirmpassword">
+                    <button type="button" id="showConfirmPasswordBtn" class="show-password-btn">show</button>
+                </div>
+                
+                <button type="submit" class="sign-btn">Sign Up</button>
+                <p><a href="index.html"><b>Go back to Sign In</b></a></p> 
+            </form>
+        </div>
+    </div>
+    <script src="SignIn.js"></script> 
+</body>
+<img class="logo2" src="/Pictures/SEI_Logo50.png" alt=""> <!-- Ensure correct path -->
+</html>

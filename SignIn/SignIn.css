@@ -1,0 +1,202 @@
+.logo {
+    width: 150px;
+    float: left;
+}
+.logo2 {
+    width: 500px;
+    height: auto;
+    float: right;
+    margin-top: -320px;
+}
+body {
+    background-color: #f2f2f2; /* Add background color to the entire website */
+}
+
+#rectangle {
+    width: auto;
+    height: 25px;
+    background: orange;
+    margin-top: -20px;
+    box-shadow: 0px 3px 3px;
+}
+
+.bg {
+    width: auto;
+    height: auto;
+    box-shadow: 0px 3px 3px;
+}
+
+.container {
+    padding: 100px;
+    display: flex;
+    column-gap: 0px;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin-top: -80px;
+    position: relative;
+    flex: 1;
+}
+
+.div1 {
+    align-self: center;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.div2 {
+    /* Add any styling needed for this division */
+}
+
+.sign-in {
+    width: 500px;
+    height: 550px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #CAD7DD;
+    padding: 20px;
+    box-shadow: 0px 3px 3px;
+    border-radius: 30px;
+}
+
+#Sign-In-Box {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 533px;
+    height: 50px;
+    background: orange;
+    box-shadow: 0px 1px 2px;
+    margin-top: -22px;
+    margin-left: -22px;
+    padding: 5px;
+    border-radius: 0px;
+}
+
+h1 {
+    margin-top: -0px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.input-wrapper label {
+    margin-right: 10px;
+    font-size: 16px; 
+    color: #333;
+    width: 100px;
+}
+
+.input-box {
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+button {
+    font-size: large;
+    color: black;
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sign-btn {
+    background-color: #9CB3C9;
+}
+
+.sign-btn:hover {
+    background-color: #b97c09;
+}
+
+.password-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.password-input-wrapper label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+    width: 100px;
+}
+
+.password-container input[type="password"] {
+    border-radius: 20px;
+    border: 1px solid #999;
+    padding: 10px;
+    width: calc(100% - 40px); /* Make room for the button inside the input box */
+}
+
+.show-password-btn {
+    position: absolute;
+    right: 15px; /* Adjust as needed */
+    top: 25%;
+    transform: translateY(-50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    font-size: medium;
+    width: 50px;
+}
+
+#studentIdInput, #gradeLevelInput, #gradeSectionInput, #teacherIdInput {
+    display: flex;
+    align-items: center;
+    margin-bottom:  0px; /* Increased margin for better spacing */
+}
+
+#studentIdInput label, #gradeLevelInput label, #gradeSectionInput label ,#teacherIdInput label{
+    font-size: 16px;
+    color: #333;
+    width: 150px; /* Increased width for better alignment */
+}
+
+#studentIdInput .input-box, #gradeLevelInput .input-box, #gradeSectionInput .input-box ,#teacherIdInput .input-box{
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%; /* Ensures the input box fills the remaining space */
+    border: 1px solid #999;
+    outline: none;
+}
+
+.confirm-password-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.confirm-password-input-wrapper label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+    width: 150px;
+}
+
+.confirm-password-input-wrapper .input-box {
+    border-radius: 20px;
+    border: 1px solid #999;
+    padding: 10px;
+    width: calc(100% - 40px); /* Make room for the button inside the input box */
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "icon" type = "logo" href = "\Pictures/SEI_Logo.png"> <!--REPLACE WITH REAL LOGO-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantabhadra Educational Institute</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href="index.js"> 
+
+</head>
+
+
+<body>
+    
+    <img class = "logo" src = "..\Pictures/SEI_Logo.png" alt=""> <!--REPLACE WITH REAL LOGO-->
+    
+    <h2 style = "text-align: left;"><br><font color = "0000FF">SAMANTABHADRA EDUCATIONAL INSTITUTE<br>
+        <font color = "696969">CEBU CITY <br>
+        <font color = "0000FF">TEACHER PORTAL 
+        </font></h2>
+
+        <h2 style="text-align: right"><font color="0000FF">Today is <span id="date"></span></font></h2>
+        <script> 
+            var dt = new Date();
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var formattedDate = dt.toLocaleDateString(undefined, options);
+            document.getElementById('date').innerHTML = formattedDate;
+        </script>    
+
+    <div id = "rectangle">
+        
+    </div>
+
+
+
+    <div class = "container">
+        <div class ="div1">
+            <p style = "font-size: 25px;"><font color = "0000FF">You have reached the Official Website of </br>
+                the <b>Samantabhadra Educational Institute</b>, </br>Cebu City.</font><p>  
+        </div>
+        
+        <div class = "div2">
+            <img class = "bg" src = "..\Pictures/SEI_BG.jpg" alt=""> 
+        </div>
+
+        <div class="sign-in">
+            <div id="Sign-In-Box">
+                <h1><font color="FFFFFF">Sign-In</font></h1> 
+            </div>
+            <form>
+                <input type="text" class="input-box" placeholder="Username:">
+                <div class="password-input-wrapper">
+                    <input type="password" id="passwordInput" class="input-box" placeholder="Password:">
+                    <button type="button" id="showPasswordBtn" class="show-password-btn">show</button>
+                </div>
+                <button type="button" onclick="location.href='/StudentPage/Home.html'" class="sign-btn">Sign In</button>
+                <p><a href="#" id="forgotPasswordLink">Forgot Password</a></p>
+                <p>No Account?<a href="SignIn.html"> Click Here </a> to register</p>
+                <div class="icon-container">
+                    <div class="icon-item" id="student-icon">
+                        <a href="index.html">
+                            <img class="icon" src="..\Pictures\studentIcon.png" alt="Student Icon">
+                            <p>Student</p>
+                        </a>
+                    </div>
+                    <div class="icon-item" id="teacher-icon">
+                        <a href="Teacher.html">
+                            <img class="icon" src="..\Pictures\teacherIcon.png" alt="Teacher Icon">
+                            <p>Teacher</p>
+                        </a>
+                    </div>
+                    <div class="icon-item" id="schooladmin-icon">
+                        <a href="Admin.html">
+                            <img class="icon" src="..\Pictures\adminIcon.png" alt="Admin Icon">
+                            <p>Admin</p>
+                        </a>
+                    </div>
+                </div>
+            </form>
+            <div class="feedback-container">
+                <p class="feedback-label">Want to leave a feedback?</p>
+                <button class="feedback-button" onclick="openFeedbackPopup()">Feedback</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="forgotPasswordPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Forgot Password</h2>
+            <p>We will send you your current password at your registered email</p>
+            <p>Please enter your email:</p>
+            <input type="email" class="input-box-popup" placeholder="Email">
+            <button class="submit-btn" id="forgotPasswordSubmit">Submit</button> <!-- Add ID for reference -->
+        </div>
+    </div>
+
+    <!-- Feedback popup -->
+    <div id="feedbackPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeFeedbackPopup()">&times;</span>
+            <h2>YOUR FEEDBACK MATTERS!</h2>
+            <p>We value your input and would love to hear your thoughts and suggestions on how we can improve our services. Please share your feedback below:</p>
+            <!-- Adjust the rows and cols attributes to make the textarea bigger -->
+            <textarea id="feedbackText" class="input-box-popup-feedback" placeholder="Enter your feedback" rows="6" cols="50"></textarea>
+            <button class="submit-btn" onclick="submitFeedback()">Submit</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script> 
+    <img class="logo2" src="..\Pictures/SEI_Logo50.png" alt=""> <!--REPLACE WITH REAL LOGO-->
+</body>
+</html>
